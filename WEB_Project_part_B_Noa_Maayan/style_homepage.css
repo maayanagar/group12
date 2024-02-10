@@ -1,0 +1,92 @@
+/*body{
+    background-color: #F8F3F2;
+}
+
+.tennis_ball_image{
+    background-image: url("images/istock_000062879576_double.jpg");
+    width: 5456px;
+    height: 3552px;
+    position: relative;
+}
+*/
+body, html {
+  background-color: #F8F3F2;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative; /* Ensure the pseudo-element is positioned relative to the container */
+  overflow: hidden; /* Hide anything that goes outside the bounds */
+}
+
+.left-panel {
+  background-image: url("images/istock_000062879576_double.jpg");
+  background-size: 100% 50%; /* Adjust the size of the image to cover roughly one quarter of the panel */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* Align the background image to the bottom left */
+  width: 50%;
+  height: 100%;
+  position: relative; /* Needed for absolute positioning of any child elements */
+}
+
+.left-panel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #223d3c; /* Your green background color */
+  clip-path: polygon(0 100%, 100% 0, 100% 100%); /* Creates the diagonal split */
+}
+
+.tennis-logo {
+  background-image: url("images/i-Tennis logo with background2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px; /* Adjust based on the actual size of your logo */
+  width: 100%; /* This will make it span the full width of the left-panel */
+}
+
+.right-panel {
+  background-color: #223D3C;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(100% 0,100% 100%,0 100%);
+}
+
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.navigation li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #aaa; /* Adjust color as needed */
+}
+
+.navigation li:last-child {
+  border-bottom: none;
+}
+
+/* Add media queries to adjust layout on smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+
+}
