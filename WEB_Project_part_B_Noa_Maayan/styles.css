@@ -4,8 +4,8 @@ body, html {
 }
 
 .tennis-background-pages-image {
-    background-image: url("images/backgroung image-goodOne.jpg");
-    background-size: contain;
+    background-image: url("images/backgroung image-goodOne2.png");
+    background-size: 50%;
     background-repeat: no-repeat;
     height: 100vh;
 }
