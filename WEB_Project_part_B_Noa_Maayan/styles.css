@@ -28,12 +28,40 @@ body, html {
     width: 98vw;
 }
 
+.tennis-home-icon {
+    background-image: url("images/icons/home.png");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 98.5vh;
+    width: 8vw;
+    margin-left: -2.5vw;
+}
+
+.main-title {
+    text-align: center;
+    margin: 2vh;
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 5vw; /* Make font size responsive */
+    color: #223d3c;
+    direction: rtl;
+}
+
+.main-title::after {
+    display: inline-block;
+    background-image: url("images/icons/Tennis racket logo transperent.png");
+    background-repeat: no-repeat;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap; /* Wrap squares if not enough horizontal space */
     justify-content: center;
     align-items: center; /* Allow different square sizes to align properly */
     min-height: 100vh;
+    margin-top: -8vh;
 }
 
 .square {
