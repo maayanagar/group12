@@ -1,0 +1,201 @@
+body, html {
+    background-color: #F8F3F2;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.tennis-background-pages-image {
+    background-image: url("images/backgroung image-goodOne3.png");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-left: -1vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tennis-logo-pages {
+    background-image: url("images/i-Tennis logo with background2.png");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    height: 10vh;
+    width: 98vw;
+}
+
+.tennis-home-icon {
+    background-image: url("images/icons/home.png");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 98.5vh;
+    width: 8vw;
+    margin-left: -2.5vw;
+}
+
+.main-title {
+    position: relative;
+    text-align: center;
+    margin: 2vh;
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 5vw; /* Make font size responsive */
+    color: #223d3c;
+    direction: rtl;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    background-image: url("images/icons/Tennis racket logo transperent.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20vh;
+    width: 12vw;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap squares if not enough horizontal space */
+    justify-content: center;
+    align-items: center; /* Allow different square sizes to align properly */
+    min-height: 100vh;
+    margin-top: -8vh;
+}
+
+.square {
+    width: 30%; /* Adjust the width of squares */
+    padding-bottom: 30%; /* padding-bottom to maintain aspect ratio */
+    background-color: #223d3c;
+    margin: 5%; /* Give some space between the squares */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pseudo-elements adjusted to be based on the size of the square */
+.square::before, .square::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("images/line.png");
+}
+
+.square::before {
+    top: 95%;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Adjust the height to be a percentage of the square's width */
+}
+
+.square::after {
+    bottom: 6%;
+    right: 85%;
+    width: 100%; /* Adjust the width to be a percentage of the square's width */
+    height: 80%; /* Adjust the height to be a percentage of the square's width */
+    transform: rotate(90deg);
+}
+
+/* Adjusted text to be more responsive */
+.square-text {
+    position: absolute;
+    top: 10%; /* Adjust top position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F8F3F2;
+    text-align: center;
+    width: 65%; /* Allow some padding within the square */
+}
+
+.container h1 {
+    margin: 0;
+    padding: 1%;
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 4vw; /* Make font size responsive */
+    color: #F8F3F2;
+    direction: rtl;
+}
+
+.container h2 {
+    margin: 15%;
+    font-family: 'calibri', sans-serif;
+    font-weight: normal;
+    font-size: 1.8vw; /* Make font size responsive */
+    color: #F8F3F2;
+    direction: rtl;
+    text-align: right;
+}
+
+.square-text-list {
+    position: absolute;
+    top: 46%; /* Adjust top position */
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #F8F3F2;
+    width: 80%; /* Allow some padding within the square */
+    font-size: 1.5vw; /* Make font size responsive */
+    font-family: 'calibri', sans-serif;
+    font-weight: lighter;
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+}
+
+.square-text-list li {
+    padding: 1% 0; /* Provide padding for each list item */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square {
+        width: 90%; /* Full width for smaller screens */
+        padding-bottom: 90%; /* Maintain aspect ratio */
+        margin: 5% 0; /* Vertical margin only */
+    }
+
+    .square-text, .container h1, .container h2, .square-text-list {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .square-text, .container h1, .container h2, .square-text-list {
+        font-size: 6vw; /* Larger font size for very small screens*/}
+}
+
+.container-schedule {
+    width: 70vw; /* Set the width of the container to your desired value */
+    margin-left: 25vw; /* Center the container horizontally */
+    z-index: 70;
+}
+.week-calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #223d3c;
+    grid-template-rows: repeat(11, 1fr); /* Assuming 14 hours working in a day */gap: 1px; /* Gap between grid cells */
+    align-items: center;
+    column-gap: 1px;
+    padding: 5px;
+}
+
+.day,
+.time {
+    color: #F8F3F2; /* Background color for days and time slots */
+   /* border: 2px solid #F8F3F2; /* Border for each cell */
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 2vw; /* Make font size responsive */
+    padding: 5px;
+}
