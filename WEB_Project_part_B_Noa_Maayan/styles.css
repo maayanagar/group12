@@ -152,6 +152,57 @@ body, html {
     padding: 1% 0; /* Provide padding for each list item */
 }
 
+
+.square-text-form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust as needed */
+    direction: rtl;
+}
+
+.form-label {
+    margin-bottom: 0.5em; /* Space between label and input */
+    font-family: 'calibri', sans-serif;
+    font-weight: normal;
+    font-size: 1.8vw; /* Make font size responsive */
+    color: #F8F3F2;
+    margin-right: 10%; /* Spacing between label and input, since label comes after input in the DOM */
+}
+
+.form-input {
+    width: 40%; /* Set to 100% of the parent container */
+    height: 30px; /* Increase height for larger input */
+    margin-bottom: 1em; /* Space between input fields */
+    color: #000000; /* Set text color */
+    border: 1px solid #F8F3F2; /* White border around the inputs */
+    margin-left: auto; /* Pushes the input to the left side of the flex container */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.form-submit {
+    display: block;
+    margin: 1em auto;
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    width: auto; /* Adjust width as needed */
+    padding: 10px 5%; /* Responsive padding */
+    background-color: #A95D4C; /* Background color */
+    color: #F8F3F2; /* Text color */
+    border: 2px solid #F8F3F2; /* White border */
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer; /* Cursor for button */
+    font-size: 1.5vw; /* Responsive font size */
+    outline: none; /* Remove focus outline for aesthetics; consider accessibility implications */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.form-submit:hover {
+    background-color: #B9765C; /* Slightly lighter color on hover */
+    border-color: #EDEDED; /* Lighter border on hover */
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .container {
@@ -170,7 +221,20 @@ body, html {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .square-text, .container h1, .container h2, .square-text-list {
         font-size: 6vw; /* Larger font size for very small screens*/}
+}
+
+
+@media (max-width: 768px) {
+    .main-title, .form-label, .form-submit {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title, .form-label, .form-submit {
+        font-size: 1rem; /* Even smaller font size for very small screens */
+    }
 }
