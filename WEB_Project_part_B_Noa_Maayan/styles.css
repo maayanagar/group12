@@ -1,0 +1,10 @@
+body, html {
+    background-color: #F8F3F2;
+    box-sizing: border-box;
+}
+
+.tennis-background-pages-image {
+    background-image: url("images/backgroung image.gif");
+    height: 10vh;
+    width: 10vh;
+}
