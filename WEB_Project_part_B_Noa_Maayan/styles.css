@@ -1,10 +1,11 @@
 body, html {
     background-color: #F8F3F2;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 .tennis-background-pages-image {
-    background-image: url("images/backgroung image.jpg");
-    height: 1000px;
-    width: 100%;
+    background-image: url("images/backgroung image-goodOne.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
