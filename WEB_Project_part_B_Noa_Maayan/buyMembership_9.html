@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I-Tennis: Subscribe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="tennis-background-pages-image"></div>
+<div class="tennis-logo-pages"></div>
+<div class="tennis-home-icon"></div>
+<h1 class="main-title">רכישת מנוי</h1>
+<div class="container">
+    <div class="square" id="square1">
+        <form>
+            <div class="radio-option">
+                <h2>סוג המנוי: </h2>
+                <input type="radio" id="membership" name="subscription-type" value="membership" class="form-input-radio"
+                       checked/>
+                <label for="membership" class="form-label-radio">מנוי</label>
+                <input type="radio" id="ticket" name="subscription-type" value="ticket" class="form-input-radio"/>
+                <label for="ticket" class="form-label-radio">כרטיסייה</label>
+            </div>
+            <div class="square-text-form2">
+                <label for="firstName" class="form-label">שם מלא: </label>
+                <input type="text" id="firstName" name="firstName" class="form-input" required><br>
+                <label for="phone" class="form-label">טלפון:</label>
+                <input type="text" id="phone" name="phone" class="form-input" required><br>
+                <label for="email" class="form-label">כתובת מייל:</label>
+                <input type="text" id="email" name="email" class="form-input" required><br>
+                <label for="password" class="form-label">סיסמה:</label>
+                <input type="password" id="password" name="password" class="form-input" required><br>
+                <label for="age" class="form-label">גיל:</label>
+                <input type="text" id="age" name="age" class="form-input-small" required>
+                <label for="gender" class="form-label">מין:</label>
+                <input type="text" id="gender" name="gender" class="form-input-small" required><br>
+                <label for="creditCard" class="form-label">כרטיס אשראי:</label>
+                <input type="text" id="creditCard" name="creditCard" class="form-input" required><br>
+                <label for="id" class="form-label">תעודת זהות:</label>
+                <input type="text" id="id" name="id" class="form-input" required><br>
+                <label for="exp" class="form-label">תוקף:</label>
+                <input type="text" id="exp" name="exp" class="form-input-small" required>
+                <label for="cvv" class="form-label">CVV:</label>
+                <input type="password" id="cvv" name="cvv" class="form-input-small" required>
+                <input type="submit" value="רכישה" class="form-submit">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

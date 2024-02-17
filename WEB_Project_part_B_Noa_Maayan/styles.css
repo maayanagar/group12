@@ -153,7 +153,6 @@ body, html {
     padding: 1% 0; /* Provide padding for each list item */
 }
 
-
 .square-text-form {
     position: absolute;
     top: 30%;
@@ -184,11 +183,11 @@ body, html {
 
 .form-submit {
     display: block;
-    margin: 1em auto;
+    margin: 0.5em 6em;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
     width: auto; /* Adjust width as needed */
-    padding: 10px 5%; /* Responsive padding */
+    padding: 5px 5%; /* Responsive padding */
     background-color: #A95D4C; /* Background color */
     color: #F8F3F2; /* Text color */
     border: 2px solid #F8F3F2; /* White border */
@@ -204,6 +203,52 @@ body, html {
     border-color: #EDEDED; /* Lighter border on hover */
 }
 
+.square-text-form2 {
+    position: absolute;
+    top: 52%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust as needed */
+    direction: rtl;
+}
+.form-input-small {
+    width: 20%; /* Set to 100% of the parent container */
+    height: 30px; /* Increase height for larger input */
+    margin-bottom: 1em; /* Space between input fields */
+    color: #000000; /* Set text color */
+    border: 1px solid #F8F3F2; /* White border around the inputs */
+    margin-left: auto; /* Pushes the input to the left side of the flex container */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.radio-option {
+    display: flex;
+    align-items: center; /* This will vertically center the radio button with the text */
+    accent-color: #A95D4C; /* Color the radio button with the primary color */
+    direction: rtl;
+}
+
+.radio-option h2{
+    margin: 0;
+    padding: 1%;
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw; /* Make font size responsive */
+    color: #F8F3F2;
+    direction: rtl;
+}
+
+.form-input-radio {
+    width: 10%; /* Set to 100% of the parent container */
+    height: 20px; /* Increase height for larger input */
+}
+
+.form-label-radio{
+    font-family: 'calibri', sans-serif;
+    font-weight: normal;
+    font-size: 1.8vw; /* Make font size responsive */
+    color: #F8F3F2;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -252,6 +297,21 @@ body, html {
     color: #F8F3F2; /* White text color */
     z-index: 1;
 }
+
+.schedule-container::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("images/line.png");
+    bottom: 25%;
+    right: 90%;
+    width: 55%; /* Adjust the width to be a percentage of the square's width */
+    height: 60%; /* Adjust the height to be a percentage of the square's width */
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
 
 .day-column {
     display: grid;
@@ -307,13 +367,13 @@ body, html {
     }
 }
 
-.button {
+button {
     display: block;
     margin: 1em auto;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
     width: auto; /* Adjust width as needed */
-    padding: 10px 5%; /* Responsive padding */
+    padding: 8px 15%; /* Responsive padding */
     background-color: #A95D4C; /* Background color */
     color: #F8F3F2; /* Text color */
     border: 2px solid #F8F3F2; /* White border */
@@ -325,7 +385,7 @@ body, html {
     z-index: 2;
 }
 
-.button:hover {
+button:hover {
     background-color: #B9765C; /* Slightly lighter color on hover */
     border-color: #EDEDED; /* Lighter border on hover */
 }
