@@ -448,7 +448,7 @@ button:hover {
     top: 10%;
 }
 
-#square1::after, #square2::after, #square3::after, #square4::after, #square5::after,#square6::after,#square7::after,#square8::after {
+#square3::after, #square4::after, #square5::after, #square6::after, #square7::after,#square8::after,#square9::after,#square10::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -459,29 +459,29 @@ button:hover {
     bottom: 10%;
 }
 
-#square1::after {
+#square3::after {
     background-image: url("images/icons/removeFromSchedule.png");
 }
 
-#square2::after {
+#square4::after {
     background-image: url("images/icons/addToSchedule.png");
 }
 
-#square3::after {
+#square5::after {
     background-image: url("images/icons/personalTraning.png");
 }
 
-#square4::after,#square6::after {
+#square6::after,#square8::after {
     background-image: url("images/icons/Schedule.png");
 }
 
-#square5::after {
+#square7::after {
     background-image: url("images/icons/money.png");
 }
-#square7::after {
+#square9::after {
     background-image: url("images/icons/court.png");
 }
-#square8::after {
+#square10::after {
     background-image: url("images/icons/history.png");
 }
 
@@ -572,7 +572,7 @@ button:hover {
         padding: 5px;
     }
 
-    #square1::after, #square2::after, #square3::after, #square4::after, #square5::after,#square6::after,#square7::after,#square8::after   {
+    #square3::after, #square4::after, #square5::after, #square6::after, #square7::after,#square8::after,#square9::after,#square10::after   {
         display: none; /* This would hide the images on screens smaller than 768px */
     }
 }
