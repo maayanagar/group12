@@ -271,7 +271,7 @@ body, html {
     z-index: 1;
 }
 
-.session {
+.session{
     padding: 10px;
     background-color: #F8F3F2; /* White background for session */
     color: #000; /* Black text color for session */
@@ -284,8 +284,12 @@ body, html {
     cursor: pointer; /* Change cursor to pointer to indicate clickable */
     transition: background-color 0.3s; /* Add transition effect for smooth color change */
 }
+.session:empty{
+    background-color: #223d3c;
+    cursor: default; /* Change cursor to pointer to indicate clickable */
+}
 
-.session:hover {
+.session:not(:empty):hover {
   background-color: #A95D4C; /* Change background color on hover */
   color: #F8F3F2; /* Change text color on hover */
 }
@@ -385,4 +389,37 @@ body, html {
 }
 .square-text-list-contact-info li:nth-child(3):before {
     background-image: url("images/icons/mail.png");
+}
+
+.square-text-list-history {
+    position: absolute;
+    top: 45%; /* Adjust top position*/
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #F8F3F2;
+    width: 80%; /* Allow some padding within the square*/
+    font-size: 1.3vw; /* Make font size responsive*/
+    font-family: 'calibri', sans-serif;
+    font-weight: lighter;
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+    list-style: none;
+    z-index: 4;
+}
+.square-text-list-history li {
+    padding: 1% 0;
+    line-height: 1.8;
+    z-index: 4;
+}
+
+.square-text-list-history li:not(:empty)::before{
+    content: "";
+    background-image: url("images/icons/V.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5vh;
+    width: 5vw;
+    left: 100%;
 }
