@@ -448,7 +448,7 @@ button:hover {
     top: 10%;
 }
 
-#square1::after, #square2::after, #square3::after, #square4::after, #square5::after {
+#square1::after, #square2::after, #square3::after, #square4::after, #square5::after,#square6::after,#square7::after,#square8::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -471,12 +471,63 @@ button:hover {
     background-image: url("images/icons/personalTraning.png");
 }
 
-#square4::after {
+#square4::after,#square6::after {
     background-image: url("images/icons/Schedule.png");
 }
 
 #square5::after {
     background-image: url("images/icons/money.png");
+}
+#square7::after {
+    background-image: url("images/icons/court.png");
+}
+#square8::after {
+    background-image: url("images/icons/history.png");
+}
+
+.container-small-account {
+    display: grid;
+    position: relative;
+    left: 30%;
+    bottom: 40%;
+    width: 25vw; /*Set the width of the container to your desired value */
+    margin: 5vw; /* Center the container horizontally */
+    /*margin-top: 10vh;*/
+    grid-template-rows: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Space between columns */
+    align-items: center; /* Allow different square sizes to align properly */
+    /* margin-top: -8vh;*/
+    z-index: 5;
+}
+
+.square-small-account {
+    display: grid;
+    padding-bottom: 30%; /* padding-bottom to maintain aspect ratio */
+    background-color: #223d3c;
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+}
+
+/* Pseudo-elements adjusted to be based on the size of the square */
+.square-small-account::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("images/line.png");
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Adjust the height to be a percentage of the square's width */
+}
+.container-small-account h1 {
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+    font-size: 1.9vw; /* Make font size responsive */
+    color: #F8F3F2;
+    direction: rtl;
+    text-align: right;
 }
 
 /* Media Queries */
@@ -521,7 +572,7 @@ button:hover {
         padding: 5px;
     }
 
-    #square1::after, #square2::after, #square3::after, #square4::after, #square5::after {
+    #square1::after, #square2::after, #square3::after, #square4::after, #square5::after,#square6::after,#square7::after,#square8::after   {
         display: none; /* This would hide the images on screens smaller than 768px */
     }
 }
