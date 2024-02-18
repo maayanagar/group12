@@ -292,6 +292,17 @@ button:hover {
     direction: rtl;
     text-align: right;
 }
+.container h4{
+    position:absolute;
+    bottom: 10%;
+    right: 10%;
+    font-family: 'calibri', sans-serif;
+    font-weight: normal;
+    font-size: 1vw; /* Make font size responsive */
+    color: #F8F3F2;
+    direction: rtl;
+    text-align: right;
+}
 
 .square-text-contact {
     position: absolute;
