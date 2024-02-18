@@ -74,7 +74,7 @@ a {
 }
 
 .square {
-    width: 30%; /* Adjust the width of squares */
+    width: 30vw; /* Adjust the width of squares */
     padding-bottom: 30%; /* padding-bottom to maintain aspect ratio */
     background-color: #223d3c;
     margin: 5%; /* Give some space between the squares */
@@ -166,21 +166,19 @@ a {
 }
 
 .form-label {
-    margin-bottom: 0.5em; /* Space between label and input */
+    margin-bottom: 0.3em; /* Space between label and input */
     font-family: 'calibri', sans-serif;
     font-weight: normal;
     font-size: 1.8vw; /* Make font size responsive */
     color: #F8F3F2;
-    margin-right: 10%; /* Spacing between label and input, since label comes after input in the DOM */
 }
 
 .form-input {
-    width: 40%; /* Set to 100% of the parent container */
-    height: 30px; /* Increase height for larger input */
-    margin-bottom: 1em; /* Space between input fields */
+    width: 8vw; /* Set to 100% of the parent container */
+    height: 3vh; /* Increase height for larger input */
+    margin-bottom: 0.3em; /* Space between input fields */
     color: #000000; /* Set text color */
     border: 1px solid #F8F3F2; /* White border around the inputs */
-    margin-left: auto; /* Pushes the input to the left side of the flex container */
     border-radius: 10px; /* Rounded edges */
 }
 
@@ -549,32 +547,31 @@ button:hover {
 
 .square-text-form2 {
     position: absolute;
-    top: 52%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* Adjust as needed */
+    right: 5vw;
     direction: rtl;
-}
-.form-input-small {
-    width: 20%; /* Set to 100% of the parent container */
-    height: 30px; /* Increase height for larger input */
-    margin-bottom: 1em; /* Space between input fields */
-    color: #000000; /* Set text color */
-    border: 1px solid #F8F3F2; /* White border around the inputs */
-    margin-left: auto; /* Pushes the input to the left side of the flex container */
-    border-radius: 10px; /* Rounded edges */
+    align-items: center; /* This will vertically center the radio button with the text */
+    accent-color: #A95D4C; /* Color the radio button with the primary color */
 }
 
-.radio-option {
+.form-input-small {
+    width: 4vw; /* Set to 100% of the parent container */
+    height: 3vh; /* Increase height for larger input */
+    margin-bottom: 0.3em; /* Space between input fields */
+    color: #000000; /* Set text color */
+    border: 1px solid #F8F3F2; /* White border around the inputs */
+    border-radius: 10px;
+}
+
+.radio-option { /*NEED TO DELETE*/
     display: flex;
     align-items: center; /* This will vertically center the radio button with the text */
     accent-color: #A95D4C; /* Color the radio button with the primary color */
     direction: rtl;
 }
 
-.radio-option h2{
+.square-text-form2 h2{
     margin: 0;
-    padding: 1%;
+    padding: 0;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
     font-size: 1.5vw; /* Make font size responsive */
