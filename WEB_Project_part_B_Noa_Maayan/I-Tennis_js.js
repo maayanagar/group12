@@ -1,3 +1,4 @@
-document.getElementById('element').addEventListener('click', function() {
-  this.classList.add('clicked'); // Add 'clicked' class to element when clicked
-});
+function changeSessionColor(element) {
+  element.classList.toggle('session-clicked'); // Toggle the 'clicked' class on the clicked element
+}
+

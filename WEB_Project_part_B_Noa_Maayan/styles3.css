@@ -260,7 +260,7 @@ a {
     background-color: #A95D4C; /* Change background color on hover */
     color: #F8F3F2; /* Change text color on hover */
 }
-.session.clicked {
+.session-clicked {
     background-color: #A95D4C; /* Change background color on hover */
     color: #F8F3F2; /* Change text color on hover */
 }
