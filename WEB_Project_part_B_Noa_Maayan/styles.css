@@ -4,10 +4,12 @@ body, html {
     overflow-x: hidden;
     box-sizing: border-box;
 }
+
 a {
-  color: #F8F3F2;
-  text-decoration: none; /* no underline */
+    color: #F8F3F2;
+    text-decoration: none; /* no underline */
 }
+
 .tennis-background-pages-image {
     background-image: url("images/backgroung image-goodOne3.png");
     position: absolute;
@@ -174,7 +176,7 @@ a {
 }
 
 .form-input {
-    width: 8vw; /* Set to 100% of the parent container */
+    width: 10vw; /* Set to 100% of the parent container */
     height: 3vh; /* Increase height for larger input */
     margin-bottom: 0.3em; /* Space between input fields */
     color: #000000; /* Set text color */
@@ -254,6 +256,11 @@ a {
     cursor: default; /* Change cursor to pointer to indicate clickable */
 }
 
+.session-clicked {
+    background-color: #A95D4C; /* Change background color on hover */
+    color: #F8F3F2; /* Change text color on hover */
+}
+
 .session:not(:empty):hover {
     background-color: #A95D4C; /* Change background color on hover */
     color: #F8F3F2; /* Change text color on hover */
@@ -290,8 +297,9 @@ button:hover {
     direction: rtl;
     text-align: right;
 }
-.container h4{
-    position:absolute;
+
+.container h4 {
+    position: absolute;
     bottom: 10%;
     right: 10%;
     font-family: 'calibri', sans-serif;
@@ -554,7 +562,7 @@ button:hover {
 }
 
 .form-input-small {
-    width: 4vw; /* Set to 100% of the parent container */
+    width: 6vw; /* Set to 100% of the parent container */
     height: 3vh; /* Increase height for larger input */
     margin-bottom: 0.3em; /* Space between input fields */
     color: #000000; /* Set text color */
@@ -569,7 +577,7 @@ button:hover {
     direction: rtl;
 }
 
-.square-text-form2 h2{
+.square-text-form2 h2 {
     margin: 0;
     padding: 0;
     font-family: 'calibri', sans-serif;
@@ -584,12 +592,23 @@ button:hover {
     height: 20px; /* Increase height for larger input */
 }
 
-.form-label-radio{
+.form-label-radio {
     font-family: 'calibri', sans-serif;
     font-weight: normal;
     font-size: 1.8vw; /* Make font size responsive */
     color: #F8F3F2;
 }
+
+#emailIcon {
+    cursor: pointer; /* Shows a pointer cursor on hover, indicating clickability */
+    text-decoration: underline; /* Optional: adds an underline to indicate it's a link */
+    color: #A95D4C; /* Optional: changes color to indicate it's clickable */
+}
+
+#emailIcon:hover {
+    opacity: 0.7; /* Optional: change appearance on hover to further indicate clickability */
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
