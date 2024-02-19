@@ -49,6 +49,7 @@ a {
     position: relative;
     text-align: center;
     margin: 2vh;
+    min-height: 10vh;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
     font-size: 5vw; /* Make font size responsive */
@@ -206,11 +207,16 @@ a {
     border-color: #EDEDED; /* Lighter border on hover */
 }
 
+.schedule-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .schedule-container {
     position: relative;
     display: grid;
-    width: 70vw; /*Set the width of the container to your desired value */
-    margin-left: 25vw; /* Center the container horizontally */
+    width: 80vw; /*Set the width of the container to your desired value */
     grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
     gap: 10px; /* Space between columns */
     padding: 10px;
@@ -643,7 +649,7 @@ button:hover {
 /* Additional styles for arrows, hovering effects, and responsiveness */
 @media screen and (max-width: 768px) {
     .schedule-container {
-        grid-template-columns: repeat(3, 1fr); /* Show 3 columns on smaller screens */
+        width: 90%;
     }
 
     /* Adjust the size of the sessions for smaller screens */
