@@ -272,13 +272,16 @@ a {
     color: #F8F3F2; /* Change text color on hover */
 }
 
-button {
+button{
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
     display: block;
     margin: 1em auto;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    width: auto; /* Adjust width as needed */
-    padding: 8px 15%; /* Responsive padding */
+    width: 10%; /* Adjust width as needed */
+    height: 7vh;
     background-color: #A95D4C; /* Background color */
     color: #F8F3F2; /* Text color */
     border: 2px solid #F8F3F2; /* White border */
