@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.querySelector(".square-text-form");
 
-    loginForm.addEventListener("submit", function(event) {
+    loginForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
         const username = document.getElementById("username").value;

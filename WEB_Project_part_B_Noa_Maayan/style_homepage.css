@@ -11,8 +11,8 @@ body, html {
 }
 
 a {
-  color: #F8F3F2;
-  text-decoration: none; /* no underline */
+    color: #F8F3F2;
+    text-decoration: none; /* no underline */
 }
 
 .tennis-banner {

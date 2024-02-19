@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     courts.forEach(court => {
         // find the day column that matches the court day
         const dayColumn = Array.from(scheduleContainer.querySelectorAll('.day-column'))
-                              .find(column => column.dataset.day === court.day);
+            .find(column => column.dataset.day === court.day);
 
         // create a div for the court
         const courtDiv = document.createElement("div");

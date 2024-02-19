@@ -1,18 +1,17 @@
-
 function populateSessionsSelect() {
     const select = document.getElementById('sessionSelect');
     sessions.forEach(session => {
         const option = document.createElement('option');
         option.value = session.id;
-        option.textContent =`${session.day}, ${session.date}, ${session.time}, ${session.type}` ;
+        option.textContent = `${session.day}, ${session.date}, ${session.time}, ${session.type}`;
         select.appendChild(option);
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     populateSessionsSelect();
 
-     const sessionReductionForm = document.getElementById('sessionReductionForm');
+    const sessionReductionForm = document.getElementById('sessionReductionForm');
 
     sessionReductionForm.addEventListener('submit', function (event) {
         event.preventDefault();

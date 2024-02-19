@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sessions.forEach(session => {
         // find the day column that matches the session day
         const dayColumn = Array.from(scheduleContainer.querySelectorAll('.day-column'))
-                              .find(column => column.dataset.day === session.day);
+            .find(column => column.dataset.day === session.day);
 
         // create a div for the session
         const sessionDiv = document.createElement("div");
