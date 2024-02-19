@@ -6,7 +6,7 @@ body, html {
     font-weight: bold;
     font-size: 1.5rem;
     color: #F8F3F2;
-    direction: rtl; /* Right-to-left for Hebrew text */
+    direction: rtl; /* Hebrew text */
     overflow-y: hidden;
 }
 
@@ -54,14 +54,14 @@ a {
 }
 
 .tennis-logo {
-    position: relative; /* Position absolutely within the header */
-    top: 5%; /* Align to the top */
-    left: -60%; /* Align to the left */
+    position: relative;
+    top: 5%;
+    left: -60%;
     background-image: url("images/i-Tennis logo with background2.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 30%; /* Set a specific height or as needed */
-    width: 30%; /* Set a specific width or as needed */
+    height: 30%;
+    width: 30%;
 }
 
 .tennis-menu {
@@ -72,25 +72,25 @@ a {
 }
 
 .tennis-menu li {
-    transform: skew(20deg); /* Reverse skew for content */
+    transform: skew(20deg);
     position: relative;
     padding: 1.1em;
     text-align: center;
 }
 
 .tennis-menu li::after {
-    content: ''; /* Required for pseudo-elements */
-    display: block; /* Makes it possible to apply width and position */
-    margin: 0 10%; /* Centers the pseudo-element */
-    width: 70%; /* Adjust this value to control the border length */
-    height: 1px; /* Border thickness */
-    background: white; /* Border color */
+    content: '';
+    display: block;
+    margin: 0 10%;
+    width: 70%;
+    height: 1px;
+    background: white;
     position: absolute;
-    bottom: 0; /* Aligns at the bottom of the list item */
+    bottom: 0;
 }
 
 .tennis-menu li:hover {
-    color: #B9765C; /* Slightly lighter color on hover */
+    color: #B9765C; /* lighter color on hover */
     opacity: 0.7;
 }
 

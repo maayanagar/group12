@@ -52,7 +52,7 @@ a {
     min-height: 10vh;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    font-size: 5vw; /* Make font size responsive */
+    font-size: 5vw;
     color: #223d3c;
     direction: rtl;
 }
@@ -69,23 +69,22 @@ a {
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Wrap squares if not enough horizontal space */
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center; /* Allow different square sizes to align properly */
+    align-items: center;
     min-height: 100vh;
     margin-top: -8vh;
 }
 
 .square {
-    width: 30vw; /* Adjust the width of squares */
-    padding-bottom: 30%; /* padding-bottom to maintain aspect ratio */
+    width: 30vw;
+    padding-bottom: 30%;
     background-color: #223d3c;
-    margin: 5%; /* Give some space between the squares */
+    margin: 5%;
     position: relative;
     overflow: hidden;
 }
 
-/* Pseudo-elements adjusted to be based on the size of the square */
 .square::before, .square::after {
     content: "";
     position: absolute;
@@ -98,26 +97,25 @@ a {
     top: 95%;
     left: 0;
     width: 100%;
-    height: 80%; /* Adjust the height to be a percentage of the square's width */
+    height: 80%;
 }
 
 .square::after {
     bottom: 6%;
     right: 85%;
-    width: 100%; /* Adjust the width to be a percentage of the square's width */
-    height: 80%; /* Adjust the height to be a percentage of the square's width */
+    width: 100%;
+    height: 80%;
     transform: rotate(90deg);
 }
 
-/* Adjusted text to be more responsive */
 .square-text {
     position: absolute;
-    top: 10%; /* Adjust top position */
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F8F3F2;
     text-align: center;
-    width: 65%; /* Allow some padding within the square */
+    width: 65%;
 }
 
 .container h1 {
@@ -125,7 +123,7 @@ a {
     padding: 1%;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    font-size: 4vw; /* Make font size responsive */
+    font-size: 4vw;
     color: #F8F3F2;
     direction: rtl;
 }
@@ -134,7 +132,7 @@ a {
     margin: 15%;
     font-family: 'calibri', sans-serif;
     font-weight: normal;
-    font-size: 1.8vw; /* Make font size responsive */
+    font-size: 1.8vw;
     color: #F8F3F2;
     direction: rtl;
     text-align: right;
@@ -142,12 +140,12 @@ a {
 
 .square-text-list {
     position: absolute;
-    top: 46%; /* Adjust top position */
+    top: 46%;
     left: 45%;
     transform: translate(-50%, -50%);
     color: #F8F3F2;
-    width: 80%; /* Allow some padding within the square */
-    font-size: 1.5vw; /* Make font size responsive */
+    width: 80%;
+    font-size: 1.5vw;
     font-family: 'calibri', sans-serif;
     font-weight: lighter;
     direction: rtl;
@@ -156,7 +154,7 @@ a {
 }
 
 .square-text-list li {
-    padding: 1% 0; /* Provide padding for each list item */
+    padding: 1% 0;
 }
 
 .square-text-form {
@@ -164,25 +162,25 @@ a {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust as needed */
+    width: 80%;
     direction: rtl;
 }
 
 .form-label {
-    margin-bottom: 0.3em; /* Space between label and input */
+    margin-bottom: 0.3em;
     font-family: 'calibri', sans-serif;
     font-weight: normal;
-    font-size: 1.8vw; /* Make font size responsive */
+    font-size: 1.8vw;
     color: #F8F3F2;
 }
 
 .form-input {
-    width: 10vw; /* Set to 100% of the parent container */
-    height: 3vh; /* Increase height for larger input */
-    margin-bottom: 0.3em; /* Space between input fields */
-    color: #000000; /* Set text color */
-    border: 1px solid #F8F3F2; /* White border around the inputs */
-    border-radius: 10px; /* Rounded edges */
+    width: 10vw;
+    height: 3vh;
+    margin-bottom: 0.3em;
+    color: #000000;
+    border: 1px solid #F8F3F2;
+    border-radius: 10px; /* rounded edges */
 }
 
 .form-submit {
@@ -190,21 +188,21 @@ a {
     margin: 0.5em 6em;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    width: auto; /* Adjust width as needed */
-    padding: 5px 5%; /* Responsive padding */
-    background-color: #A95D4C; /* Background color */
-    color: #F8F3F2; /* Text color */
-    border: 2px solid #F8F3F2; /* White border */
-    border-radius: 20px; /* Rounded edges */
-    cursor: pointer; /* Cursor for button */
-    font-size: 1.5vw; /* Responsive font size */
-    outline: none; /* Remove focus outline for aesthetics; consider accessibility implications */
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    width: auto;
+    padding: 5px 5%;
+    background-color: #A95D4C;
+    color: #F8F3F2;
+    border: 2px solid #F8F3F2;
+    border-radius: 20px; /* rounded edges */
+    cursor: pointer;
+    font-size: 1.5vw;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s; /* hover effects */
 }
 
-.form-submit:hover {
-    background-color: #B9765C; /* Slightly lighter color on hover */
-    border-color: #EDEDED; /* Lighter border on hover */
+.form-submit:hover { /* hover effects */
+    background-color: #B9765C;
+    border-color: #EDEDED;
 }
 
 .schedule-wrapper {
@@ -216,60 +214,60 @@ a {
 .schedule-container {
     position: relative;
     display: grid;
-    width: 80vw; /*Set the width of the container to your desired value */
-    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
-    gap: 10px; /* Space between columns */
+    width: 80vw;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
     padding: 10px;
-    background-color: #223d3c; /* Dark green background */
-    color: #F8F3F2; /* White text color */
+    background-color: #223d3c;
+    color: #F8F3F2;
     z-index: 1;
 }
 
 .day-column {
     display: grid;
-    grid-template-rows: repeat(6, 1fr); /* Header row and 1fr for each session */
-    gap: 10px; /* Space between sessions */
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
     z-index: 1;
 
 }
 
 .date-header {
     padding: 10px;
-    background-color: #223d3c; /* Slightly lighter green background for the header */
-    text-align: center; /* Center text */
+    background-color: #223d3c;
+    text-align: center;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    font-size: 1.5vw; /* Make font size responsive*/
+    font-size: 1.5vw;
     z-index: 1;
 }
 
 .session {
     padding: 10px;
-    background-color: #F8F3F2; /* White background for session */
-    color: #000; /* Black text color for session */
-    border-radius: 10px; /* Rounded corners for the session blocks */
+    background-color: #F8F3F2;
+    color: #000;
+    border-radius: 10px;
     text-align: center;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
     font-size: 1.1vw;
     z-index: 1;
-    cursor: pointer; /* Change cursor to pointer to indicate clickable */
-    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .session:empty {
     background-color: #223d3c;
-    cursor: default; /* Change cursor to pointer to indicate clickable */
+    cursor: default;
 }
 
-.session-clicked {
-    background-color: #A95D4C; /* Change background color on hover */
-    color: #F8F3F2; /* Change text color on hover */
+.session-clicked { /* hover effects */
+    background-color: #A95D4C;
+    color: #F8F3F2;
 }
 
-.session:not(:empty):hover {
-    background-color: #A95D4C; /* Change background color on hover */
-    color: #F8F3F2; /* Change text color on hover */
+.session:not(:empty):hover { /* hover effects */
+    background-color: #A95D4C;
+    color: #F8F3F2;
 }
 
 button{
@@ -280,28 +278,28 @@ button{
     margin: 1em auto;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    width: 10%; /* Adjust width as needed */
+    width: 10%;
     height: 7vh;
-    background-color: #A95D4C; /* Background color */
-    color: #F8F3F2; /* Text color */
-    border: 2px solid #F8F3F2; /* White border */
-    border-radius: 20px; /* Rounded edges */
-    cursor: pointer; /* Cursor for button */
-    font-size: 1.5vw; /* Responsive font size */
-    outline: none; /* Remove focus outline for aesthetics; consider accessibility implications */
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    background-color: #A95D4C;
+    color: #F8F3F2;
+    border: 2px solid #F8F3F2;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5vw;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
     z-index: 2;
 }
 
-button:hover {
-    background-color: #B9765C; /* Slightly lighter color on hover */
-    border-color: #EDEDED; /* Lighter border on hover */
+button:hover { /* hover effects */
+    background-color: #B9765C;
+    border-color: #EDEDED;
 }
 
 .container h3 {
     font-family: 'calibri', sans-serif;
     font-weight: normal;
-    font-size: 1.5vw; /* Make font size responsive */
+    font-size: 1.5vw;
     color: #F8F3F2;
     direction: rtl;
     text-align: right;
@@ -313,7 +311,7 @@ button:hover {
     right: 10%;
     font-family: 'calibri', sans-serif;
     font-weight: normal;
-    font-size: 1vw; /* Make font size responsive */
+    font-size: 1vw;
     color: #F8F3F2;
     direction: rtl;
     text-align: right;
@@ -321,23 +319,23 @@ button:hover {
 
 .square-text-contact {
     position: absolute;
-    top: 20%; /* Adjust top position */
+    top: 20%;
     left: 55%;
     transform: translate(-50%, -50%);
     color: #F8F3F2;
     text-align: right;
-    width: 85%; /* Allow some padding within the square */
+    width: 85%;
     line-height: 1.5;
 }
 
 .square-text-list-contact-info {
     position: absolute;
-    top: 70%; /* Adjust top position*/
+    top: 70%;
     left: 45%;
     transform: translate(-50%, -50%);
     color: #F8F3F2;
-    width: 80%; /* Allow some padding within the square*/
-    font-size: 1.5vw; /* Make font size responsive*/
+    width: 80%;
+    font-size: 1.5vw;
     font-family: 'calibri', sans-serif;
     font-weight: lighter;
     direction: rtl;
@@ -377,12 +375,12 @@ button:hover {
 
 .square-text-list-history {
     position: absolute;
-    top: 45%; /* Adjust top position*/
+    top: 45%;
     left: 45%;
     transform: translate(-50%, -50%);
     color: #F8F3F2;
-    width: 80%; /* Allow some padding within the square*/
-    font-size: 1.3vw; /* Make font size responsive*/
+    width: 80%;
+    font-size: 1.3vw;
     font-family: 'calibri', sans-serif;
     font-weight: lighter;
     direction: rtl;
@@ -414,26 +412,23 @@ button:hover {
     position: relative;
     left: 26%;
     bottom: 40%;
-    width: 50vw; /*Set the width of the container to your desired value */
-    margin: 5vw; /* Center the container horizontally */
-    /*margin-top: 10vh;*/
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
-    grid-gap: 20px; /* Space between columns */
-    align-items: center; /* Allow different square sizes to align properly */
-    /* margin-top: -8vh;*/
+    width: 50vw;
+    margin: 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
     z-index: 5;
 }
 
 .square-small {
     display: grid;
-    padding-bottom: 30%; /* padding-bottom to maintain aspect ratio */
+    padding-bottom: 30%;
     background-color: #223d3c;
     position: relative;
     overflow: hidden;
     z-index: 6;
 }
 
-/* Pseudo-elements adjusted to be based on the size of the square */
 .square-small::before {
     content: "";
     position: absolute;
@@ -443,23 +438,23 @@ button:hover {
     top: 90%;
     left: 0;
     width: 100%;
-    height: 80%; /* Adjust the height to be a percentage of the square's width */
+    height: 80%;
 }
 
 .square-small-text {
     position: absolute;
-    top: 30%; /* Adjust top position */
+    top: 30%;
     left: 60%;
     margin-right: 5%;
     transform: translate(-50%, -50%);
     color: #F8F3F2;
-    width: 65%; /* Allow some padding within the square */
+    width: 65%;
 }
 
 .container-small h1 {
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    font-size: 1.9vw; /* Make font size responsive */
+    font-size: 1.9vw;
     color: #F8F3F2;
     direction: rtl;
     text-align: right;
@@ -520,26 +515,23 @@ button:hover {
     position: relative;
     left: 30%;
     bottom: 40%;
-    width: 25vw; /*Set the width of the container to your desired value */
-    margin: 5vw; /* Center the container horizontally */
-    /*margin-top: 10vh;*/
-    grid-template-rows: repeat(3, 1fr); /* Adjust the number of columns as needed */
-    grid-gap: 20px; /* Space between columns */
-    align-items: center; /* Allow different square sizes to align properly */
-    /* margin-top: -8vh;*/
+    width: 25vw;
+    margin: 5vw;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
     z-index: 5;
 }
 
 .square-small-account {
     display: grid;
-    padding-bottom: 30%; /* padding-bottom to maintain aspect ratio */
+    padding-bottom: 30%;
     background-color: #223d3c;
     position: relative;
     overflow: hidden;
     z-index: 6;
 }
 
-/* Pseudo-elements adjusted to be based on the size of the square */
 .square-small-account::before {
     content: "";
     position: absolute;
@@ -549,13 +541,13 @@ button:hover {
     top: 90%;
     left: 0;
     width: 100%;
-    height: 80%; /* Adjust the height to be a percentage of the square's width */
+    height: 80%;
 }
 
 .container-small-account h1 {
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    font-size: 1.9vw; /* Make font size responsive */
+    font-size: 1.9vw;
     color: #F8F3F2;
     direction: rtl;
     text-align: right;
@@ -566,24 +558,17 @@ button:hover {
     position: absolute;
     right: 5vw;
     direction: rtl;
-    align-items: center; /* This will vertically center the radio button with the text */
-    accent-color: #A95D4C; /* Color the radio button with the primary color */
+    align-items: center;
+    accent-color: #A95D4C;
 }
 
 .form-input-small {
-    width: 6vw; /* Set to 100% of the parent container */
-    height: 3vh; /* Increase height for larger input */
-    margin-bottom: 0.3em; /* Space between input fields */
-    color: #000000; /* Set text color */
-    border: 1px solid #F8F3F2; /* White border around the inputs */
+    width: 6vw;
+    height: 3vh;
+    margin-bottom: 0.3em;
+    color: #000000;
+    border: 1px solid #F8F3F2;
     border-radius: 10px;
-}
-
-.radio-option { /*NEED TO DELETE*/
-    display: flex;
-    align-items: center; /* This will vertically center the radio button with the text */
-    accent-color: #A95D4C; /* Color the radio button with the primary color */
-    direction: rtl;
 }
 
 .square-text-form2 h2 {
@@ -591,35 +576,35 @@ button:hover {
     padding: 0;
     font-family: 'calibri', sans-serif;
     font-weight: bold;
-    font-size: 1.5vw; /* Make font size responsive */
+    font-size: 1.5vw;
     color: #F8F3F2;
     direction: rtl;
 }
 
 .form-input-radio {
-    width: 10%; /* Set to 100% of the parent container */
-    height: 20px; /* Increase height for larger input */
+    width: 10%;
+    height: 20px;
 }
 
 .form-label-radio {
     font-family: 'calibri', sans-serif;
     font-weight: normal;
-    font-size: 1.8vw; /* Make font size responsive */
+    font-size: 1.8vw;
     color: #F8F3F2;
 }
 
 #emailIcon {
-    cursor: pointer; /* Shows a pointer cursor on hover, indicating clickability */
-    text-decoration: underline; /* Optional: adds an underline to indicate it's a link */
-    color: #A95D4C; /* Optional: changes color to indicate it's clickable */
+    cursor: pointer;
+    text-decoration: underline;
+    color: #A95D4C;
 }
 
 #emailIcon:hover {
-    opacity: 0.7; /* Optional: change appearance on hover to further indicate clickability */
+    opacity: 0.7;
 }
 
 
-/* Media Queries */
+/* media queries */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -627,41 +612,39 @@ button:hover {
     }
 
     .square {
-        width: 90%; /* Full width for smaller screens */
-        padding-bottom: 90%; /* Maintain aspect ratio */
-        margin: 5% 0; /* Vertical margin only */
+        width: 90%;
+        padding-bottom: 90%;
+        margin: 5% 0;
     }
 
     .square-text, .container h1, .container h2, .square-text-list {
-        font-size: 5vw; /* Adjust font size for smaller screens */
+        font-size: 5vw;
     }
 
     .square-text, .container h1, .container h2, .square-text-list {
-        font-size: 6vw; /* Larger font size for very small screens*/
+        font-size: 6vw;
     }
 
     .main-title, .form-label, .form-submit {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem;
     }
 
     .main-title, .form-label, .form-submit {
-        font-size: 1rem; /* Even smaller font size for very small screens */
+        font-size: 1rem;
     }
 }
 
-/* Additional styles for arrows, hovering effects, and responsiveness */
 @media screen and (max-width: 768px) {
     .schedule-container {
         width: 90%;
     }
 
-    /* Adjust the size of the sessions for smaller screens */
     .session {
         font-size: smaller;
         padding: 5px;
     }
 
     #square3::after, #square4::after, #square5::after, #square6::after, #square7::after, #square8::after, #square9::after, #square10::after {
-        display: none; /* This would hide the images on screens smaller than 768px */
+        display: none;
     }
 }

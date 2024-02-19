@@ -5,39 +5,34 @@ document.addEventListener("DOMContentLoaded", function () {
     sessions.forEach(function (session) {
         session.addEventListener('click', function () {
             if (session.classList.contains('session-clicked')) {
-                // If this session is already selected, unselect it
+                // double click to unselect the session
                 session.classList.remove('session-clicked');
             } else {
-                // If this session is not selected, first unselect all sessions
+                // select the session
                 sessions.forEach(function (otherSession) {
                     otherSession.classList.remove('session-clicked');
                 });
-                // Then, select the clicked session
                 session.classList.add('session-clicked');
             }
         });
     });
 
     button.addEventListener('click', function (e) {
-        // Check if any session is selected
+        // check if any session is selected
         const selectedSession = document.querySelector('.session.session-clicked');
         if (!selectedSession) {
-            // Prevent form submission
-            e.preventDefault(); // Stop the button's default action
+            e.preventDefault(); // stop the button's default action
             alert('אנא בחר אימון או מגרש לפני ההרשמה!');
-            button.disabled = false; // Re-enable the button so the user can try again
-            return; // Exit the function to stop further execution
+            button.disabled = false; // release the button so the user can try again
+            return;
         }
+        button.disabled = true; // lock the button to prevent multiple clicks
 
-        // If a session is selected, proceed with the original button logic
-        button.disabled = true; // Disable the button to prevent multiple clicks during the process
-
-        // Simulate a registration process delay with setTimeout
+        // timeout
         setTimeout(function () {
-            button.disabled = false; // Re-enable the button after the process is simulated
-            alert('הרשמתך בוצעה בהצלחה!'); // Show a success notification to the user
+            button.disabled = false; // release the button after the process is simulated
+            alert('הרשמתך בוצעה בהצלחה!'); // show notification to the user
             window.location.href = "10_myAccount.html";
-            // After showing the success message, you might want to perform additional actions
-        }, 1000); // Delay set to 1000 milliseconds (1 second)
+        }, 1000);
     });
 });

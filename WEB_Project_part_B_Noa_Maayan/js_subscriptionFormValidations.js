@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const registrationForm = document.getElementById('registrationForm');
 
     registrationForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the form from being submitted to the server
+        event.preventDefault();
 
-        let errorMessage = ''; // Initialize an empty string to accumulate error messages
+        let errorMessage = '';
 
         const userData = {
             subscriptionType: document.querySelector('input[name="subscription-type"]:checked') ? document.querySelector('input[name="subscription-type"]:checked').value : '',
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cvv: document.getElementById('cvv').value
         };
 
-        // Perform validations
+        // validations
         if (!validatePhone(userData.phone)) {
             errorMessage += 'Invalid phone number. Phone number must be 10 digits and start with \'0\'.\n';
         }
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             errorMessage += 'Invalid ID. ID must be 9 digits.\n';
         }
         if (!validateCVV(userData.cvv)) {
-            errorMessage += 'Invalid CVV. CVV must be 3 or 4 digits.\n';
+            errorMessage += 'Invalid CVV. CVV must be 3 digits.\n';
         }
 
         if (errorMessage.length > 0) {
@@ -49,13 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const existingUserIndex = users.findIndex(user => user.email === userData.email);
 
         if (existingUserIndex !== -1) {
-            alert('User already exists!');
+            alert('המשתמש קיים במערכת!'); //show notification to the user
             return;
         }
 
         users.push(userData);
         localStorage.setItem('users', JSON.stringify(users));
-        alert('User registered successfully!');
+        alert('המנוי נוסף למערכת בהצלחה!'); //show notification to the user
         window.location.href = "10_myAccount.html";
     }
 
@@ -76,6 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function validateCVV(cvv) {
-        return /^\d{3,4}$/.test(cvv);
+        return /^\d{3}$/.test(cvv);
     }
 });

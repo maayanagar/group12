@@ -1,4 +1,4 @@
-// Ensure this file is loaded after sessionsData.js
+
 function populateSessionsSelect() {
     const select = document.getElementById('sessionSelect');
     sessions.forEach(session => {
@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
      const sessionReductionForm = document.getElementById('sessionReductionForm');
 
     sessionReductionForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the form from being submitted immediately
+        event.preventDefault();
 
-        // Simulate a registration process delay with setTimeout
+        // timeout
         setTimeout(function () {
-            // Re-enable the button after the process is simulated
+            // release the button after the process is simulated
             sessionReductionForm.disabled = false;
 
-            // Show a success notification to the user
+            // show notification to the user
             alert('האימון הוסר בהצלחה!');
 
-            // Redirecting the user to another page after clicking 'OK' on the alert
-            window.location.href = "8_admin.html"; // Replace "anotherPage.html" with the actual page you want to redirect to
-        }, 1000); // Delay set to 1000 milliseconds (1 second)
+            // send the admin to the admin page after adding a session
+            window.location.href = "8_admin.html";
+        }, 1000);
     });
 });
