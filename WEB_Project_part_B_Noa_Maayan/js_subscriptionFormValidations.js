@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let errorMessage = ''; // Initialize an empty string to accumulate error messages
 
-        // Capture form data
         const userData = {
             subscriptionType: document.querySelector('input[name="subscription-type"]:checked') ? document.querySelector('input[name="subscription-type"]:checked').value : '',
             firstName: document.getElementById('firstName').value,
@@ -57,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         users.push(userData);
         localStorage.setItem('users', JSON.stringify(users));
         alert('User registered successfully!');
+        window.location.href = "10_myAccount.html";
     }
 
     function validatePhone(phone) {

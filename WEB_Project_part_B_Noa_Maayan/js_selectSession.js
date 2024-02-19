@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             button.disabled = false; // Re-enable the button after the process is simulated
             alert('הרשמתך בוצעה בהצלחה!'); // Show a success notification to the user
+            window.location.href = "10_myAccount.html";
             // After showing the success message, you might want to perform additional actions
         }, 1000); // Delay set to 1000 milliseconds (1 second)
     });
