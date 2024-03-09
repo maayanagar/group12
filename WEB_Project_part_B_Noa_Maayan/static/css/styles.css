@@ -11,7 +11,7 @@ a {
 }
 
 .tennis-background-pages-image {
-    background-image: url("images/backgroung image-goodOne3.png");
+    background-image: url("../images/backgroung image-goodOne3.png");
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ a {
 }
 
 .tennis-logo-pages {
-    background-image: url("images/i-Tennis logo with background2.png");
+    background-image: url("../images/i-Tennis logo with background2.png");
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ a {
 }
 
 .tennis-home-icon {
-    background-image: url("images/icons/home.png");
+    background-image: url("../images/icons/home.png");
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ a {
 .main-title::after {
     content: "";
     position: absolute;
-    background-image: url("images/icons/Tennis racket logo transperent.png");
+    background-image: url("../images/icons/Tennis racket logo transperent.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 20vh;
@@ -90,7 +90,7 @@ a {
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("images/line.png");
+    background-image: url("../images/line.png");
 }
 
 .square::before {
@@ -362,15 +362,15 @@ button:hover { /* hover effects */
 }
 
 .square-text-list-contact-info li:nth-child(1):before {
-    background-image: url("images/icons/location.png");
+    background-image: url("../images/icons/location.png");
 }
 
 .square-text-list-contact-info li:nth-child(2):before {
-    background-image: url("images/icons/phone.png");
+    background-image: url("../images/icons/phone.png");
 }
 
 .square-text-list-contact-info li:nth-child(3):before {
-    background-image: url("images/icons/mail.png");
+    background-image: url("../images/icons/mail.png");
 }
 
 .square-text-list-history {
@@ -398,7 +398,7 @@ button:hover { /* hover effects */
 
 .square-text-list-history li:not(:empty)::before {
     content: "";
-    background-image: url("images/icons/V.png");
+    background-image: url("../images/icons/V.png");
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
@@ -434,7 +434,7 @@ button:hover { /* hover effects */
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("images/line.png");
+    background-image: url("../images/line.png");
     top: 90%;
     left: 0;
     width: 100%;
@@ -483,31 +483,31 @@ button:hover { /* hover effects */
 }
 
 #square3::after {
-    background-image: url("images/icons/removeFromSchedule.png");
+    background-image: url("../images/icons/removeFromSchedule.png");
 }
 
 #square4::after {
-    background-image: url("images/icons/addToSchedule.png");
+    background-image: url("../images/icons/addToSchedule.png");
 }
 
 #square5::after {
-    background-image: url("images/icons/personalTraning.png");
+    background-image: url("../images/icons/personalTraning.png");
 }
 
 #square6::after, #square8::after {
-    background-image: url("images/icons/Schedule.png");
+    background-image: url("../images/icons/Schedule.png");
 }
 
 #square7::after {
-    background-image: url("images/icons/money.png");
+    background-image: url("../images/icons/money.png");
 }
 
 #square9::after {
-    background-image: url("images/icons/court.png");
+    background-image: url("../images/icons/court.png");
 }
 
 #square10::after {
-    background-image: url("images/icons/history.png");
+    background-image: url("../images/icons/history.png");
 }
 
 .container-small-account {
@@ -537,7 +537,7 @@ button:hover { /* hover effects */
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("images/line.png");
+    background-image: url("../images/line.png");
     top: 90%;
     left: 0;
     width: 100%;
